@@ -11,6 +11,8 @@
     "baseSeed": 424242
   },
   "levels": {
+    "1": { "count": 10, "moveLimit": 40 },
+    "2": { "count": 12, "moveLimit": 36 },
     "20": {
       "powers": [
         "bomb",
