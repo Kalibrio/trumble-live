@@ -92,12 +92,7 @@
     }
   },
   "season": null,
-  "experiments": {
-    "frontdoor": [
-      "control",
-      "frontdoor"
-    ]
-  },
+  "experiments": {},
   "controls": {
     "pad": true,
     "tapPlace": true
