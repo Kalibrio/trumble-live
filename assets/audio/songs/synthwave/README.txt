@@ -35,4 +35,5 @@ tracks (the tempo and key are what Suno was asked for; the tempo can be a few BP
 23  drift       3:13  120 BPM  E minor         (in the mix at 1:09:03)
 24  tapeloop    3:18  118 BPM  G minor         (in the mix at 1:12:13)
 
-Game assets converted to 160 kbps MP3 for browser and iOS compatibility.
+Game assets encoded directly from the supplied lossless WAV masters to 160 kbps MP3 for browser and iOS compatibility.
+Synthwave Journey is encoded from the supplied full-mix FLAC and preserves its crossfades.

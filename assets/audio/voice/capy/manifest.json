@@ -1,0 +1,218 @@
+[
+  {
+    "file": "trumble-male-1.m4a",
+    "singer": "male",
+    "word": "trumble",
+    "take": 1,
+    "source": "trumble-song-2.mp3",
+    "start": 0.12,
+    "end": 0.83
+  },
+  {
+    "file": "trumble-male-2.m4a",
+    "singer": "male",
+    "word": "trumble",
+    "take": 2,
+    "source": "trumble-song-2.mp3",
+    "start": 3.73,
+    "end": 4.17
+  },
+  {
+    "file": "tumble-male-1.m4a",
+    "singer": "male",
+    "word": "tumble",
+    "take": 1,
+    "source": "trumble-song-2.mp3",
+    "start": 1.03,
+    "end": 1.55
+  },
+  {
+    "file": "tumble-male-2.m4a",
+    "singer": "male",
+    "word": "tumble",
+    "take": 2,
+    "source": "trumble-song-2.mp3",
+    "start": 4.17,
+    "end": 4.68
+  },
+  {
+    "file": "rumble-male-1.m4a",
+    "singer": "male",
+    "word": "rumble",
+    "take": 1,
+    "source": "trumble-song-2.mp3",
+    "start": 1.55,
+    "end": 1.98
+  },
+  {
+    "file": "rumble-male-2.m4a",
+    "singer": "male",
+    "word": "rumble",
+    "take": 2,
+    "source": "trumble-song-2.mp3",
+    "start": 4.68,
+    "end": 5.45
+  },
+  {
+    "file": "crumble-male-1.m4a",
+    "singer": "male",
+    "word": "crumble",
+    "take": 1,
+    "source": "trumble-song-2.mp3",
+    "start": 1.98,
+    "end": 2.56
+  },
+  {
+    "file": "crumble-male-2.m4a",
+    "singer": "male",
+    "word": "crumble",
+    "take": 2,
+    "source": "trumble-song-2.mp3",
+    "start": 5.45,
+    "end": 6.1
+  },
+  {
+    "file": "boing-male-1.m4a",
+    "singer": "male",
+    "word": "boing",
+    "take": 1,
+    "source": "trumble-song-2.mp3",
+    "start": 2.58,
+    "end": 3.12
+  },
+  {
+    "file": "boing-male-2.m4a",
+    "singer": "male",
+    "word": "boing",
+    "take": 2,
+    "source": "trumble-song-2.mp3",
+    "start": 6.1,
+    "end": 6.66
+  },
+  {
+    "file": "boingboing-male-1.m4a",
+    "singer": "male",
+    "word": "boingboing",
+    "take": 1,
+    "source": "trumble-song-2.mp3",
+    "start": 2.58,
+    "end": 3.73
+  },
+  {
+    "file": "boingboing-male-2.m4a",
+    "singer": "male",
+    "word": "boingboing",
+    "take": 2,
+    "source": "trumble-song-2.mp3",
+    "start": 6.1,
+    "end": 7.38
+  },
+  {
+    "file": "trumble-female-1.m4a",
+    "singer": "female",
+    "word": "trumble",
+    "take": 1,
+    "source": "trumble-song-1.mp3",
+    "start": 0,
+    "end": 0.8
+  },
+  {
+    "file": "trumble-female-2.m4a",
+    "singer": "female",
+    "word": "trumble",
+    "take": 2,
+    "source": "trumble-song-1.mp3",
+    "start": 3.23,
+    "end": 4.01
+  },
+  {
+    "file": "tumble-female-1.m4a",
+    "singer": "female",
+    "word": "tumble",
+    "take": 1,
+    "source": "trumble-song-1.mp3",
+    "start": 0.8,
+    "end": 1.23
+  },
+  {
+    "file": "tumble-female-2.m4a",
+    "singer": "female",
+    "word": "tumble",
+    "take": 2,
+    "source": "trumble-song-1.mp3",
+    "start": 4.04,
+    "end": 4.63
+  },
+  {
+    "file": "rumble-female-1.m4a",
+    "singer": "female",
+    "word": "rumble",
+    "take": 1,
+    "source": "trumble-song-1.mp3",
+    "start": 1.23,
+    "end": 1.75
+  },
+  {
+    "file": "rumble-female-2.m4a",
+    "singer": "female",
+    "word": "rumble",
+    "take": 2,
+    "source": "trumble-song-1.mp3",
+    "start": 4.63,
+    "end": 5.23
+  },
+  {
+    "file": "crumble-female-1.m4a",
+    "singer": "female",
+    "word": "crumble",
+    "take": 1,
+    "source": "trumble-song-1.mp3",
+    "start": 1.75,
+    "end": 2.23
+  },
+  {
+    "file": "crumble-female-2.m4a",
+    "singer": "female",
+    "word": "crumble",
+    "take": 2,
+    "source": "trumble-song-1.mp3",
+    "start": 5.23,
+    "end": 6.03
+  },
+  {
+    "file": "boing-female-1.m4a",
+    "singer": "female",
+    "word": "boing",
+    "take": 1,
+    "source": "trumble-song-1.mp3",
+    "start": 2.23,
+    "end": 2.68
+  },
+  {
+    "file": "boing-female-2.m4a",
+    "singer": "female",
+    "word": "boing",
+    "take": 2,
+    "source": "trumble-song-1.mp3",
+    "start": 6.03,
+    "end": 6.42
+  },
+  {
+    "file": "boingboing-female-1.m4a",
+    "singer": "female",
+    "word": "boingboing",
+    "take": 1,
+    "source": "trumble-song-1.mp3",
+    "start": 2.23,
+    "end": 3.18
+  },
+  {
+    "file": "boingboing-female-2.m4a",
+    "singer": "female",
+    "word": "boingboing",
+    "take": 2,
+    "source": "trumble-song-1.mp3",
+    "start": 6.03,
+    "end": 6.95
+  }
+]
