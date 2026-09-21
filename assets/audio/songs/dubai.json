@@ -1,0 +1,38 @@
+{
+  "title": "Dubai",
+  "original": true,
+  "source": "scripts/audio/dubai.py",
+  "seed": 20260921,
+  "bpm": 96,
+  "bars": 48,
+  "duration": 120,
+  "root": "A minor",
+  "cues": [
+    {
+      "seconds": 0,
+      "chapter": "Invitation"
+    },
+    {
+      "seconds": 20,
+      "chapter": "Immersion"
+    },
+    {
+      "seconds": 40,
+      "chapter": "Ascent"
+    },
+    {
+      "seconds": 70,
+      "chapter": "Bloom"
+    },
+    {
+      "seconds": 100,
+      "chapter": "Home"
+    }
+  ],
+  "measurement": {
+    "input_i": "-22.69",
+    "input_tp": "-6.26",
+    "input_lra": "8.90",
+    "input_thresh": "-32.96"
+  }
+}
