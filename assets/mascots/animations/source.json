@@ -1,0 +1,535 @@
+{
+  "viewer": "http://127.0.0.1:8767/Companion-viewer.html",
+  "source": "https://www.youtube.com/watch?v=7VVxh1rCZwU",
+  "companions": [
+    {
+      "id": "viewer-12-blue-mohawk-punk",
+      "name": "Blue-mohawk punk",
+      "hook": "Original animation",
+      "duration": 8,
+      "sourceStart": 1158,
+      "note": "Close-up lineup; an adjacent hand may enter the edge of the original shot."
+    },
+    {
+      "id": "viewer-13-grey-pigeon",
+      "name": "Grey pigeon",
+      "hook": "Original animation",
+      "duration": 8,
+      "sourceStart": 1158,
+      "note": "Close-up lineup; an adjacent hand may enter the edge of the original shot."
+    },
+    {
+      "id": "viewer-14-rusty-cowboy",
+      "name": "Rusty \u2014 cowboy",
+      "hook": "Original animation",
+      "duration": 8,
+      "sourceStart": 1158,
+      "note": "Close-up lineup; an adjacent hand may enter the edge of the original shot."
+    },
+    {
+      "id": "viewer-15-blue-furry-companion-with-pink-bow",
+      "name": "Blue furry companion with pink bow",
+      "hook": "Original animation",
+      "duration": 8,
+      "sourceStart": 1158,
+      "note": "Close-up lineup; an adjacent hand may enter the edge of the original shot."
+    },
+    {
+      "id": "viewer-16-purple-scientist-rabbit",
+      "name": "Purple scientist rabbit",
+      "hook": "Original animation",
+      "duration": 8,
+      "sourceStart": 1158,
+      "note": "Close-up lineup; an adjacent hand may enter the edge of the original shot."
+    },
+    {
+      "id": "viewer-01-leopard-vest-telephone-companion",
+      "name": "Leopard-vest telephone companion",
+      "hook": "Original animation",
+      "duration": 4.7,
+      "sourceStart": 375,
+      "note": ""
+    },
+    {
+      "id": "viewer-02-orange-skateboarder",
+      "name": "Orange skateboarder",
+      "hook": "Original animation",
+      "duration": 3.7,
+      "sourceStart": 376,
+      "note": ""
+    },
+    {
+      "id": "viewer-03-pink-flamingo-companion",
+      "name": "Pink flamingo companion",
+      "hook": "Original animation",
+      "duration": 3.5,
+      "sourceStart": 376.2,
+      "note": ""
+    },
+    {
+      "id": "viewer-04-shopping-companion",
+      "name": "Shopping companion",
+      "hook": "Original animation",
+      "duration": 2.7,
+      "sourceStart": 377,
+      "note": ""
+    },
+    {
+      "id": "viewer-05-classic-cream-companion",
+      "name": "Classic cream companion",
+      "hook": "Original animation",
+      "duration": 2.2,
+      "sourceStart": 377.5,
+      "note": ""
+    },
+    {
+      "id": "viewer-06-black-shirt-workout-companion",
+      "name": "Black-shirt workout companion",
+      "hook": "Original animation",
+      "duration": 1.7,
+      "sourceStart": 378,
+      "note": ""
+    },
+    {
+      "id": "viewer-07-ballerina-puppy",
+      "name": "Ballerina puppy",
+      "hook": "Original animation",
+      "duration": 1.4,
+      "sourceStart": 378.3,
+      "note": ""
+    },
+    {
+      "id": "viewer-08-green-travel-companion",
+      "name": "Green travel companion",
+      "hook": "Original animation",
+      "duration": 0.7,
+      "sourceStart": 379,
+      "note": ""
+    },
+    {
+      "id": "viewer-09-purple-cape-superhero",
+      "name": "Purple-cape superhero",
+      "hook": "Original animation",
+      "duration": 3.0,
+      "sourceStart": 466.3,
+      "note": "Cape transformation and movement."
+    },
+    {
+      "id": "viewer-10-euler-white-puppy-with-headphones",
+      "name": "Euler \u2014 white puppy with headphones",
+      "hook": "Original animation",
+      "duration": 7,
+      "sourceStart": 478.5,
+      "note": "The animated puppy; the real-dog reference is excluded where possible."
+    },
+    {
+      "id": "viewer-11-laurel-and-toga-companion",
+      "name": "Laurel-and-toga companion",
+      "hook": "Original animation",
+      "duration": 2.25,
+      "sourceStart": 1014,
+      "note": ""
+    },
+    {
+      "id": "viewer-17-orange-round-companion-lineup-1-1",
+      "name": "Orange round companion \u00b7 lineup 1.1",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-18-witch-costume-lineup-1-2",
+      "name": "Witch costume \u00b7 lineup 1.2",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-19-top-hat-magician-lineup-1-3",
+      "name": "Top-hat magician \u00b7 lineup 1.3",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-20-pizza-slice-lineup-1-4",
+      "name": "Pizza slice \u00b7 lineup 1.4",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-21-big-eared-pastel-creature-lineup-1-5",
+      "name": "Big-eared pastel creature \u00b7 lineup 1.5",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-22-green-outfit-companion-lineup-1-6",
+      "name": "Green-outfit companion \u00b7 lineup 1.6",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-23-apple-lineup-1-7",
+      "name": "Apple \u00b7 lineup 1.7",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-24-long-eared-striped-creature-lineup-1-8",
+      "name": "Long-eared striped creature \u00b7 lineup 1.8",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-25-martial-arts-costume-lineup-1-9",
+      "name": "Martial-arts costume \u00b7 lineup 1.9",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-26-orange-bottle-lineup-1-10",
+      "name": "Orange bottle \u00b7 lineup 1.10",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-27-robot-lineup-1-11",
+      "name": "Robot \u00b7 lineup 1.11",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-28-red-uniform-companion-lineup-1-12",
+      "name": "Red-uniform companion \u00b7 lineup 1.12",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-29-avocado-lineup-1-13",
+      "name": "Avocado \u00b7 lineup 1.13",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-30-orange-fox-lineup-1-14",
+      "name": "Orange fox \u00b7 lineup 1.14",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-31-dog-in-a-coat-lineup-1-15",
+      "name": "Dog in a coat \u00b7 lineup 1.15",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-32-cactus-lineup-1-16",
+      "name": "Cactus \u00b7 lineup 1.16",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-33-chef-lineup-1-17",
+      "name": "Chef \u00b7 lineup 1.17",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-34-explorer-lineup-1-18",
+      "name": "Explorer \u00b7 lineup 1.18",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-35-spiky-haired-guitarist-lineup-2-1",
+      "name": "Spiky-haired guitarist \u00b7 lineup 2.1",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-36-brown-owl-like-companion-lineup-2-2",
+      "name": "Brown owl-like companion \u00b7 lineup 2.2",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-37-blue-outfit-masked-companion-lineup-2-3",
+      "name": "Blue-outfit masked companion \u00b7 lineup 2.3",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-38-aqua-jelly-like-creature-lineup-2-4",
+      "name": "Aqua jelly-like creature \u00b7 lineup 2.4",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-39-pale-tentacled-creature-lineup-2-5",
+      "name": "Pale tentacled creature \u00b7 lineup 2.5",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-40-red-eared-formal-companion-lineup-2-6",
+      "name": "Red-eared formal companion \u00b7 lineup 2.6",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-41-pirate-lineup-2-7",
+      "name": "Pirate \u00b7 lineup 2.7",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-42-mushroom-lineup-2-12",
+      "name": "Mushroom \u00b7 lineup 2.12",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-43-dark-spiky-creature-lineup-2-13",
+      "name": "Dark spiky creature \u00b7 lineup 2.13",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-44-red-dress-companion-lineup-2-14",
+      "name": "Red-dress companion \u00b7 lineup 2.14",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-45-burger-lineup-2-15",
+      "name": "Burger \u00b7 lineup 2.15",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-46-astronaut-lineup-2-16",
+      "name": "Astronaut \u00b7 lineup 2.16",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-47-grey-animal-suit-lineup-2-17",
+      "name": "Grey animal suit \u00b7 lineup 2.17",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-48-tomato-superhero-lineup-2-18",
+      "name": "Tomato superhero \u00b7 lineup 2.18",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-49-taco-lineup-3-1",
+      "name": "Taco \u00b7 lineup 3.1",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-50-pale-crystalline-creature-lineup-3-2",
+      "name": "Pale crystalline creature \u00b7 lineup 3.2",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-51-black-hood-companion-lineup-3-3",
+      "name": "Black-hood companion \u00b7 lineup 3.3",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-52-samurai-costume-lineup-3-4",
+      "name": "Samurai costume \u00b7 lineup 3.4",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-53-toast-with-sunglasses-lineup-3-5",
+      "name": "Toast with sunglasses \u00b7 lineup 3.5",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-54-french-fries-lineup-3-6",
+      "name": "French fries \u00b7 lineup 3.6",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-55-purple-furry-creature-lineup-3-7",
+      "name": "Purple furry creature \u00b7 lineup 3.7",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-56-headphones-companion-lineup-3-8",
+      "name": "Headphones companion \u00b7 lineup 3.8",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-57-vampire-lineup-3-9",
+      "name": "Vampire \u00b7 lineup 3.9",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-58-blueberry-lineup-3-10",
+      "name": "Blueberry \u00b7 lineup 3.10",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-59-white-coat-companion-lineup-3-11",
+      "name": "White-coat companion \u00b7 lineup 3.11",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-60-brown-bear-lineup-3-12",
+      "name": "Brown bear \u00b7 lineup 3.12",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle. The presenter obscures part of this companion in the source."
+    },
+    {
+      "id": "viewer-61-grey-speckled-creature-lineup-3-13",
+      "name": "Grey speckled creature \u00b7 lineup 3.13",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-62-watermelon-lineup-3-14",
+      "name": "Watermelon \u00b7 lineup 3.14",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-63-armoured-creature-lineup-3-15",
+      "name": "Armoured creature \u00b7 lineup 3.15",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-64-lemon-lineup-3-16",
+      "name": "Lemon \u00b7 lineup 3.16",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-65-small-brown-animal-in-white-lineup-3-17",
+      "name": "Small brown animal in white \u00b7 lineup 3.17",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    },
+    {
+      "id": "viewer-66-firefighter-lineup-3-18",
+      "name": "Firefighter \u00b7 lineup 3.18",
+      "hook": "Lineup animation",
+      "duration": 2,
+      "sourceStart": 474,
+      "note": "Low-resolution lineup excerpt. Movement is subtle and includes camera motion; this is not a complete standalone animation cycle."
+    }
+  ],
+  "implementation": "Stylized procedural 3D recreations; footage used only as reference."
+}
