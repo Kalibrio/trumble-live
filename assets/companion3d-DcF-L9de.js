@@ -1,4 +1,4 @@
-import{b0 as iu}from"./gameaudio-HJnAIP7w.js";import"./tiles-CTz6syEj.js";/**
+import{b0 as iu}from"./gameaudio-BBa00Pj0.js";import"./tiles-BEBokyyo.js";/**
  * @license
  * Copyright 2010-2026 Three.js Authors
  * SPDX-License-Identifier: MIT
