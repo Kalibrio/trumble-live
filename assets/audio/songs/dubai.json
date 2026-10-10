@@ -1,12 +1,48 @@
 {
   "title": "Dubai",
   "original": true,
-  "source": "scripts/audio/dubai.py",
-  "seed": 20260921,
+  "engine": "procedural",
+  "source": "src/audio/dubai-score.ts",
+  "fallback": {
+    "file": "dubai-score.m4a",
+    "what": "round 9: a 120 s bake of THIS procedural score (render-score.mjs --profile bake: the game's energy arc on the fixed form, level 4), the second pass cut loop-exact with a 250 ms seam crossfade, AAC 192 kbps, mastered 2.3 dB under the score's output so the shared +8 dB song trim lands it at the live score's level (-20.3 LUFS-I in the file)",
+    "when": "automatically when Web Audio cannot carry the live score (no AudioContext features, or audio underruns persist in the lite profile), or on ?dubaiSong=mp3",
+    "lastResort": {
+      "file": "dubai.mp3",
+      "what": "the ORIGINAL recorded song (scripts/audio/dubai.py, seed 20260921), unchanged; played only if the m4a cannot be decoded",
+      "seed": 20260921
+    }
+  },
   "bpm": 96,
   "bars": 48,
   "duration": 120,
-  "root": "A minor",
+  "root": "A minor: A harmonic minor over the E7b9 dominant (the hijaz jins on E, F->E sigh); an A pedal under moving upper structures in the Bloom's last phrase",
+  "sections": [
+    {
+      "bar": 0,
+      "id": "invitation"
+    },
+    {
+      "bar": 8,
+      "id": "immersion"
+    },
+    {
+      "bar": 16,
+      "id": "ascent"
+    },
+    {
+      "bar": 20,
+      "id": "lift"
+    },
+    {
+      "bar": 28,
+      "id": "bloom"
+    },
+    {
+      "bar": 40,
+      "id": "home"
+    }
+  ],
   "cues": [
     {
       "seconds": 0,
@@ -33,6 +69,119 @@
     "input_i": "-22.69",
     "input_tp": "-6.26",
     "input_lra": "8.90",
-    "input_thresh": "-32.96"
-  }
+    "input_thresh": "-32.96",
+    "note": "of the fallback mp3"
+  },
+  "profiles": {
+    "full": "desktop / Android with >4 cores",
+    "lite": "iOS, Capacitor, <=4 cores, or ?dubaiLite=1",
+    "lite_round8": "3 pad saws with per-side detune, the quadrature pad chorus, a two-sided choir, the full halo, four shimmer partials, a two-reflection stand-in for the voice plate, +1 dB side gain (Bloom S/M ~-9 dB, correlation >600 Hz ~0.47 vs the reference's -8.9 / 0.50)"
+  },
+  "layers": [
+    "pad",
+    "halo",
+    "glass",
+    "air",
+    "arp",
+    "pulse",
+    "bass",
+    "kick",
+    "perc",
+    "hats",
+    "clap",
+    "lead",
+    "harm",
+    "counter",
+    "oud",
+    "ney",
+    "shimmer",
+    "danger",
+    "fx"
+  ],
+  "bloom": {
+    "phrases": [
+      {
+        "bar": 28,
+        "chords": "Fmaj9 Em7 Am9 Am9",
+        "adds": "the drop: pad, halo, pearls, rhythm, cymbal swell"
+      },
+      {
+        "bar": 32,
+        "chords": "Dm9 Fmaj7#11 E7b9 E7b9",
+        "adds": "the harmony voice on its climax; a one-beat drop-out with a reverse swell on bar 35 beat 4"
+      },
+      {
+        "bar": 36,
+        "chords": "Am9 Dm/A G6/A E7b9 (repeats: Fmaj9 Dm9 C9 E7b9)",
+        "adds": "the qanun, the full halo, a glass ride tick on the quarters"
+      }
+    ],
+    "fills": "darbuka tek/ka 32nds, crescendo, on the last beat of bars 31, 35, 39",
+    "drop": "supersaw + FM + noise riser, a reverse-reverb swell of the first Bloom chord, an accelerating snare roll, an 8th-note pre-drop gap (only the reverb tails), then the impact; the Bloom's sustained sheets ride an 8th-note trance gate"
+  },
+  "instruments": {
+    "voice": "round 6: the singer is a TEXTURE, not the hook. Source-filter: an LF-style glottal source (jitter, shimmer, delayed vibrato) baked at 32 kHz per sung semitone (2.8 s, two takes; lite: one take, baked lazily 16 bars ahead), through a live CASCADE (series, Klatt-style) of five formant resonators plus the singer's formant, sung an octave below the written line (A3-E4, f0 220-330 Hz, where the formants resolve vowels); only in the Invitation (a hum), the Lift and Home; its breath/air path opens only while a note sounds",
+    "qanun": "Karplus-Strong, three detuned strings per course; answers every rest of the hook, and owns one WHOLE bar of every Bloom phrase (a figure of 8ths and 16ths on the last sung notes, the glass pearls catching its peaks)",
+    "oud": "Karplus-Strong double course, body resonances, risha tremolo",
+    "ney": "near-pure tone + pitched breath band + chiff, quarter-tone scoops and wavers",
+    "reverb": "modulated 8-line FDN hall impulse (3.4 s, RT 2.3 s, -4 dB above 6 kHz); the voice plate 1.5 s, -6 dB above 4 kHz; the pre-drop gap closes the hall to 0.15, the plate to 0.1 and the echo to 0",
+    "flute": "the hook (Immersion, Ascent, Bloom): a breathy FM flute with a ney colour: a soft-harmonic tone with a 1:1 FM brightness that rides the attack, a pitched breath at f0 and 2 f0 gated by the note envelope, a tongued chiff on fresh notes, slurs with portamento, the maqam ornaments (grace, turn, the hijaz F->E slide), vibrato that is half pitch and half breath pressure; on the third pass it plays the Bloom an octave lower while the pearls double it an octave up",
+    "choir": "a wide detuned choir pad under the flute (the 'harm' layer outside the singer's sections): 4 chord tones x 2 saws at +-8 cents with ensemble vibrato, two sides each through its own cascade of formant peaks, the vowel morphing ah<->oh over ~18 s; it swells in, never snaps"
+  },
+  "loudness": {
+    "what": "EBU R128 integrated loudness (LUFS) of offline renders and files, measured by scratch evidence (ffmpeg ebur128). Round 7: the score's glue is lighter (a ~15 dB crest in the Bloom) and its own render sits ~1.5 dB under round 6; the music bus adds scoreTrimDb (songs.ts SCORE_TRIM_DB). tests/dubai-score.test.ts keeps score + scoreTrimDb and the lifted mp3 within 1 LU of the album",
+    "album": -14.5,
+    "albumFiles": {
+      "trumble-song-1": -14.3,
+      "trumble-song-2": -14.7,
+      "trumble-song-3": -14.5
+    },
+    "score": -17.7,
+    "scorePeak": -0.8,
+    "mp3": -22.6,
+    "mp3Peak": -6.3,
+    "mp3TrimDb": 8,
+    "scoreLevel1": -18.3,
+    "scoreLevel10": -16.8,
+    "bloomPass3": -14.3,
+    "bloomPass3ShortTermMax": -12.6,
+    "scoreTrimDb": 2.6,
+    "round": 7
+  },
+  "reactive": {
+    "inputs": [
+      "energy (round 8: a hot Bloom pumps the pad/choir ~2.5 dB deeper and thins its sustained mids ~3 dB)",
+      "combo (chain 2: a quick 32nd pearl flourish; chain 3+: ONE phrase, a quantised sung stab + qanun strum + filter open + 16th pearl run that waits for any flourish still sounding, +1.2..1.9 dB; 5+: a fill and a crash; round 8: the score no longer ducks itself on the clear, the sound set's pump is the one owner)",
+      "danger",
+      "zone",
+      "level / lines (heat: capped at +1.5 dB of gain; the rest is writing: level 4+ the qanun counter-line in the Bloom from pass 1, level 5+ a riq layer of 'ka' ghosts, level 7+ the last Bloom phrase doubled by the pearls an octave up with the choir full; the pad and the halo open higher with heat)",
+      "playing (round 8: three gates, see form.gates: the Ascent loops 16-19 until 3 matches; the breakdown loops 20-23 until 6 matches, so the drop is earned; a live combo of 3+ or TRUMBLAST extends the Bloom by its last phrase, Home comes when play calms)"
+    ],
+    "passes": "melody A / B / C rotate and rest in different bars; pass 2: the choir under the whole Bloom, the pad an inversion up, a syncopated pluck, the bass an octave up for the first phrase and a 16th octave jump after, a two-bar breath at bars 32-33 (no kick, a held root, a darbuka roll, a crash on 34); pass 3: a half-time first phrase, a galloping bass, saidi darbuka, the glass ride throughout, the flute an octave down with the pearls an octave up, a two-bar breath at 36-37. Bloom pass-to-pass spectrogram correlation 0.63-0.74 (round 5: 0.91-0.95, same measure)"
+  },
+  "form": {
+    "note": "round 8: the form follows the game. A live match gates three points; the menu runs the 48-bar clock form.",
+    "lift": "bars 20-27 (20 s): a dark half (20-23, the flute over a closed pad) and a 4-bar sweep (24-27, the voice, the riser, the pad 400 Hz -> 9 kHz)",
+    "gates": [
+      {
+        "at_bar": 19,
+        "loops": "16-19",
+        "until": "3 matches this pass, a combo of 3+, or TRUMBLAST",
+        "max_loops": 3
+      },
+      {
+        "at_bar": 23,
+        "loops": "20-23",
+        "until": "6 matches this pass, a combo of 3+, or TRUMBLAST (the drop is earned)",
+        "max_loops": 2
+      },
+      {
+        "at_bar": 39,
+        "loops": "36-39",
+        "while": "a live combo of 3+ or TRUMBLAST (the Bloom is extended; Home comes when play calms)",
+        "max_loops": 2
+      }
+    ]
+  },
+  "air": "round 8: the Bloom's top is continuous: an 8-14 kHz sheen stem (two decorrelated noise bands, past the pumps) swelling once a bar; the sustained sheets dip -7 dB under the kick and the clap only (9 ms in, ~120 ms back), never on the open-hat offbeats; the pad may open to 6.5 kHz and the hall and echo to 7 kHz; a flute-keyed 3.2 kHz dip (-5 dB) on its neighbours and a 1 kHz dip on the choir replace round 7's static low-passes; the open hat has a 4 ms stick attack"
 }
