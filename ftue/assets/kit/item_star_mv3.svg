@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<!-- polish (critic final-1, M4/L4): an original faceted star, generated in code.
+     No black outline (a darker amber rim, rounded); faces lit from the upper-left key. -->
+<defs><clipPath id="s"><path d="M128.0,26.0 L160.9,90.7 L232.6,102.0 L181.3,153.3 L192.7,225.0 L128.0,192.0 L63.3,225.0 L74.7,153.3 L23.4,102.0 L95.1,90.7 Z" stroke-linejoin="round"/></clipPath>
+<radialGradient id="sh" cx="0.34" cy="0.28" r="0.7"><stop offset="0" stop-color="#fff6d8" stop-opacity="0.45"/><stop offset="0.55" stop-color="#fff6d8" stop-opacity="0"/></radialGradient></defs>
+<path d="M128.0,26.0 L160.9,90.7 L232.6,102.0 L181.3,153.3 L192.7,225.0 L128.0,192.0 L63.3,225.0 L74.7,153.3 L23.4,102.0 L95.1,90.7 Z" fill="#c9692a" stroke="#c9692a" stroke-width="22" stroke-linejoin="round"/>
+<path d="M128.0,26.0 L160.9,90.7 L232.6,102.0 L181.3,153.3 L192.7,225.0 L128.0,192.0 L63.3,225.0 L74.7,153.3 L23.4,102.0 L95.1,90.7 Z" fill="#ee8a2a" stroke="#ee8a2a" stroke-width="8" stroke-linejoin="round"/>
+<g clip-path="url(#s)"><path d="M128,136 L128.0,26.0 L160.9,90.7 Z" fill="#fcce5f"/><path d="M128,136 L160.9,90.7 L232.6,102.0 Z" fill="#f5ae46"/><path d="M128,136 L232.6,102.0 L181.3,153.3 Z" fill="#f29e3a"/><path d="M128,136 L181.3,153.3 L192.7,225.0 Z" fill="#ee8b2b"/><path d="M128,136 L192.7,225.0 L128.0,192.0 Z" fill="#ee8b2b"/><path d="M128,136 L128.0,192.0 L63.3,225.0 Z" fill="#f29f3a"/><path d="M128,136 L63.3,225.0 L74.7,153.3 Z" fill="#f6af47"/><path d="M128,136 L74.7,153.3 L23.4,102.0 Z" fill="#fccf60"/><path d="M128,136 L23.4,102.0 L95.1,90.7 Z" fill="#fed967"/><path d="M128,136 L95.1,90.7 L128.0,26.0 Z" fill="#fed867"/><rect width="256" height="256" fill="url(#sh)"/></g>
+</svg>

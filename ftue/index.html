@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#171145" />
+  <meta name="description" content="A cozy toy-room puzzle: drop, match, and tumble through the toybox with Capy." />
+  <meta property="og:title" content="Trumble" />
+  <meta property="og:description" content="A cozy toy-room puzzle: drop, match, and tumble through the toybox with Capy." />
+  <meta property="og:image" content="https://trumble.kalibrio.com/assets/icons/app_icon.png" />
+  <meta property="og:url" content="https://trumble.kalibrio.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <title>Trumble</title>
+  <script>
+    // THE LANDING PAGE IS THE FRONT DOOR (2026-08-24): a fresh web visit to
+    // the root shows /landing/ first — the title screen — and PLAY NOW
+    // returns here with the session flag set, so one visit sees it once.
+    // Gated on the public hostname, so the native app (capacitor://localhost)
+    // and local dev are never redirected; dev deep links (?play=) and the
+    // landing's own handoff (?from=landing) pass straight through even when
+    // storage is unavailable, so a redirect loop is impossible.
+    (function () {
+      if (location.hostname !== 'trumble.kalibrio.com') return;
+      var q = location.search;
+      // tool deep links pass through too (editor fix 2026-08-30): the
+      // landing bounce dropped ?levels=1 — /level's documented handoff —
+      // and the design tool silently landed on Home instead of opening
+      if (q.indexOf('play=') !== -1 || q.indexOf('from=landing') !== -1
+        || q.indexOf('levels=') !== -1 || q.indexOf('builder=') !== -1
+        || q.indexOf('workshop=') !== -1 || q.indexOf('dash=') !== -1) return;
+      try {
+        if (sessionStorage.getItem('trumble.entered')) return;
+      } catch (e) { return; } // no storage: fail open to the game
+      location.replace('/landing/');
+    })();
+  </script>
+  <script type="module" crossorigin src="/ftue/assets/main-BhxqDFx8.js"></script>
+  <link rel="modulepreload" crossorigin href="/ftue/assets/voyagecompanion-CRzvxfpj.js">
+  <link rel="modulepreload" crossorigin href="/ftue/assets/gameaudio-VRMcx_h4.js">
+  <link rel="modulepreload" crossorigin href="/ftue/assets/analytics-B-EmlPj_.js">
+  <link rel="stylesheet" crossorigin href="/ftue/assets/main-AIVGKWmp.css">
+</head>
+<body>
+  <!-- FTUE (onboarding, plan 6 / O1): the first paint is the game's own lit
+       hand-off veil, not a blank page, while the bundle boots; main.ts
+       lifts it as soon as the first screen (Level 1's card or the hub) is up -->
+  <div id="boot-veil" aria-hidden="true" style="position:fixed;inset:0;z-index:8999;pointer-events:none;background:radial-gradient(circle 230px at 50% 36%,rgba(255,236,180,.5) 0%,rgba(255,204,120,.26) 40%,rgba(255,170,90,0) 100%),linear-gradient(180deg,#6c6197 0%,#554c7a 48%,#3c355d 100%);transition:opacity 220ms ease-out"></div>
+  <script>setTimeout(function () { var v = document.getElementById('boot-veil'); if (v) v.remove(); }, 12000);</script>
+  <div id="app">
+    <canvas id="game"></canvas>
+    <div id="ui"></div>
+  </div>
+</body>
+</html>
