@@ -39,13 +39,19 @@
       location.replace('/landing/');
     })();
   </script>
-  <script type="module" crossorigin src="/assets/main-eFDJj2M4.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/voyagecompanion-CZ0Uqmm_.js">
-  <link rel="modulepreload" crossorigin href="/assets/gameaudio-DQA7NtWi.js">
-  <link rel="modulepreload" crossorigin href="/assets/analytics-ClNCBqpC.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-C5-YjxUP.css">
+  <script type="module" crossorigin src="/assets/main-DKmiWecm.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/voyagecompanion-Dl6L725s.js">
+  <link rel="modulepreload" crossorigin href="/assets/persist-Dpzlz_Am.js">
+  <link rel="modulepreload" crossorigin href="/assets/gameaudio-C7VCafyc.js">
+  <link rel="modulepreload" crossorigin href="/assets/analytics-7ImySh_Z.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-CxVvp_Mg.css">
 </head>
 <body>
+  <!-- FTUE (onboarding, plan 6 / O1): the first paint is the game's own lit
+       hand-off veil, not a blank page, while the bundle boots; main.ts
+       lifts it as soon as the first screen (Level 1's card or the hub) is up -->
+  <div id="boot-veil" aria-hidden="true" style="position:fixed;inset:0;z-index:8999;pointer-events:none;background:radial-gradient(circle 230px at 50% 36%,rgba(255,236,180,.5) 0%,rgba(255,204,120,.26) 40%,rgba(255,170,90,0) 100%),linear-gradient(180deg,#6c6197 0%,#554c7a 48%,#3c355d 100%);transition:opacity 220ms ease-out"></div>
+  <script>setTimeout(function () { var v = document.getElementById('boot-veil'); if (v) v.remove(); }, 12000);</script>
   <div id="app">
     <canvas id="game"></canvas>
     <div id="ui"></div>

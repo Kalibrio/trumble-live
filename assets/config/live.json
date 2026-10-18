@@ -11,83 +11,57 @@
     "baseSeed": 424242
   },
   "levels": {
-    "1": { "count": 10, "moveLimit": 40 },
-    "2": { "count": 12, "moveLimit": 36 },
-    "5": { "count": 8 },
-    "20": {
-      "powers": [
-        "bomb",
-        "hold"
-      ]
-    },
     "21": {
       "powers": [
-        "bomb",
-        "colorshift",
-        "hold"
+        "bomb"
       ]
     },
     "22": {
-      "powers": [
-        "bomb",
-        "colorshift",
-        "hold"
-      ]
+      "powers": []
     },
     "23": {
       "powers": [
-        "bomb",
-        "colorshift",
-        "hold"
+        "bomb"
       ]
     },
     "24": {
       "powers": [
-        "bomb",
-        "colorshift",
-        "hold"
+        "bomb"
       ]
     },
     "25": {
       "powers": [
-        "bomb",
-        "colorshift",
-        "hold"
+        "bomb"
       ]
     },
     "26": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     },
     "27": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     },
     "28": {
       "powers": [
         "bomb",
-        "colorshift",
-        "hold"
+        "rocket"
       ]
     },
     "29": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     },
     "30": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     }
   },

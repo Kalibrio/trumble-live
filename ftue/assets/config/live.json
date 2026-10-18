@@ -13,72 +13,55 @@
   "levels": {
     "21": {
       "powers": [
-        "bomb",
-        "rocket",
-        "hold"
+        "bomb"
       ]
     },
     "22": {
-      "powers": [
-        "bomb",
-        "rocket",
-        "hold"
-      ]
+      "powers": []
     },
     "23": {
       "powers": [
-        "bomb",
-        "rocket",
-        "hold"
+        "bomb"
       ]
     },
     "24": {
       "powers": [
-        "bomb",
-        "rocket",
-        "hold"
+        "bomb"
       ]
     },
     "25": {
       "powers": [
-        "bomb",
-        "rocket",
-        "hold"
+        "bomb"
       ]
     },
     "26": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     },
     "27": {
       "powers": [
         "bomb",
-        "colorshift",
-        "hold"
+        "rocket"
       ]
     },
     "28": {
       "powers": [
         "bomb",
-        "colorshift",
-        "hold"
+        "rocket"
       ]
     },
     "29": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     },
     "30": {
       "powers": [
         "bomb",
-        "rocket",
-        "hold"
+        "rocket"
       ]
     }
   },
