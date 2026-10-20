@@ -1,0 +1,9 @@
+{
+  "collection": "Diamond So",
+  "source_commit": "2239302287cf92d0353ab06ebe2c8b6871b3d55d",
+  "source_branch": "integration/trunk",
+  "tile_id": 174,
+  "board_id": 111,
+  "combo_fire_seconds": 3.5,
+  "platform": "web"
+}
