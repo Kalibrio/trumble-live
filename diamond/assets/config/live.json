@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "feel": {},
+  "economy": {},
+  "event": null,
+  "raceWeekly": {
+    "name": "Weekend Score Race",
+    "startDow": 5,
+    "startHourUtc": 15,
+    "durH": 57,
+    "baseSeed": 424242
+  },
+  "levels": {
+    "21": {
+      "powers": [
+        "bomb"
+      ]
+    },
+    "22": {
+      "powers": []
+    },
+    "23": {
+      "powers": [
+        "bomb"
+      ]
+    },
+    "24": {
+      "powers": [
+        "bomb"
+      ]
+    },
+    "25": {
+      "powers": [
+        "bomb"
+      ]
+    },
+    "26": {
+      "powers": [
+        "bomb",
+        "rocket"
+      ]
+    },
+    "27": {
+      "powers": [
+        "bomb",
+        "rocket"
+      ]
+    },
+    "28": {
+      "powers": [
+        "bomb",
+        "rocket"
+      ]
+    },
+    "29": {
+      "powers": [
+        "bomb",
+        "rocket"
+      ]
+    },
+    "30": {
+      "powers": [
+        "bomb",
+        "rocket"
+      ]
+    }
+  },
+  "season": null,
+  "experiments": {},
+  "controls": {
+    "pad": true,
+    "tapPlace": true
+  },
+  "social": {
+    "teams": false
+  },
+  "dev": {
+    "unlock": "87cf9287a6f928b0c27721cd021541a8a6e43e564dc815eb90265a7df8959b37"
+  }
+}
