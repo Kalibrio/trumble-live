@@ -1,0 +1,7 @@
+{
+  "reference": "https://www.youtube.com/watch?v=WPpBJ-3NHco",
+  "referenceScreenshot": "output/jewelrush/comparison/reference.png",
+  "generatedSource": "/Users/kalibrio/.codex/generated_images/01a1589e-b8c5-70c2-9003-68a0efc9ebbc/call_b5d721df976942afa4163a0b67dc4867.png",
+  "method": "Root-generated image restoration from gameplay reference; original screenshot board/HUD removed and missing centre inpainted. This is not a recovered original Wooga asset.",
+  "integration": "Unlit sRGB ThreeJS plane, uniform cover, fixed camera. Portrait crop biased toward left foreground dome; opposite dome is outside crop. No distortion, nested board, or animated camera."
+}
