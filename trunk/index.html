@@ -36,15 +36,22 @@
       try {
         if (sessionStorage.getItem('trumble.entered')) return;
       } catch (e) { return; } // no storage: fail open to the game
-      location.replace('/landing/');
+      // the arrival query (an ad's ref / set / utm / click ids) and the game
+      // base (/, /trunk/, /ftue/) ride the bounce: the landing's PLAY NOW
+      // (public/landing/handoff.js) hands both back
+      var base = location.pathname.replace(/[^/]*$/, '');
+      var sp = new URLSearchParams(q);
+      if (base !== '/') sp.set('to', base);
+      var qs = sp.toString();
+      location.replace('/landing/' + (qs ? '?' + qs : ''));
     })();
   </script>
-  <script type="module" crossorigin src="/trunk/assets/main-DNUMd2Sn.js"></script>
-  <link rel="modulepreload" crossorigin href="/trunk/assets/voyagecompanion-BmR3EgLG.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/persist-qc475UKL.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/gameaudio-DIx1L6Ba.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/analytics-CA0FdQVZ.js">
-  <link rel="stylesheet" crossorigin href="/trunk/assets/main-D1vPNJnd.css">
+  <script type="module" crossorigin src="/trunk/assets/main-iY2lC42M.js"></script>
+  <link rel="modulepreload" crossorigin href="/trunk/assets/voyagecompanion-DokaspHf.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/persist-DwbT63Ce.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/gameaudio-2SnA9C9Q.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/analytics-BKeqW8Ur.js">
+  <link rel="stylesheet" crossorigin href="/trunk/assets/main-D7B9a22j.css">
 </head>
 <body>
   <!-- FTUE (onboarding, plan 6 / O1): the first paint is the game's own lit

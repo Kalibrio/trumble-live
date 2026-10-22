@@ -558,7 +558,10 @@
       // ?from=landing param covers browsers with no storage, so the gate
       // can never bounce us back here in a loop.
       try { sessionStorage.setItem('trumble.entered', '1'); } catch { /* no storage: the param carries it */ }
-      setTimeout(() => { location.href = '/?from=landing'; }, 620);
+      // handoff.js carries the arrival query (ref / set / utm / click ids)
+      // and the game base (?to=) through; '/?from=landing' without it
+      const next = typeof window.trumbleHandoff === 'function' ? window.trumbleHandoff(location.search) : '/?from=landing';
+      setTimeout(() => { location.href = next; }, 620);
     }
 
     frame(now) {
