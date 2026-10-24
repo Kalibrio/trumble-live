@@ -33,6 +33,11 @@
       if (q.indexOf('play=') !== -1 || q.indexOf('from=landing') !== -1
         || q.indexOf('levels=') !== -1 || q.indexOf('builder=') !== -1
         || q.indexOf('workshop=') !== -1 || q.indexOf('dash=') !== -1) return;
+      // AD TRAFFIC GOES STRAIGHT INTO LEVEL 1 (owner, Oct 24): an ad click
+      // (ref / utm / click ids) never sees the landing's PLAY NOW tap, which
+      // lost cold visitors before the game. The query is already here, so
+      // attribution needs no handoff.
+      if (/[?&](ref|gclid|gbraid|wbraid|utm_source|utm_campaign)=/.test(q)) return;
       try {
         if (sessionStorage.getItem('trumble.entered')) return;
       } catch (e) { return; } // no storage: fail open to the game
@@ -46,11 +51,11 @@
       location.replace('/landing/' + (qs ? '?' + qs : ''));
     })();
   </script>
-  <script type="module" crossorigin src="/assets/main-UzkiYdNe.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/voyagecompanion-DytBMhes.js">
-  <link rel="modulepreload" crossorigin href="/assets/persist-CLAg-wTg.js">
-  <link rel="modulepreload" crossorigin href="/assets/gameaudio-NK7447GK.js">
-  <link rel="modulepreload" crossorigin href="/assets/analytics-B0U_DIac.js">
+  <script type="module" crossorigin src="/assets/main-CbE_1x5R.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/voyagecompanion-B-12totM.js">
+  <link rel="modulepreload" crossorigin href="/assets/persist-lYYgOsoC.js">
+  <link rel="modulepreload" crossorigin href="/assets/gameaudio-B7uNpkL0.js">
+  <link rel="modulepreload" crossorigin href="/assets/analytics-BLnA0pdj.js">
   <link rel="stylesheet" crossorigin href="/assets/main-qwL0W7kY.css">
 </head>
 <body>

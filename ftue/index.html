@@ -33,6 +33,11 @@
       if (q.indexOf('play=') !== -1 || q.indexOf('from=landing') !== -1
         || q.indexOf('levels=') !== -1 || q.indexOf('builder=') !== -1
         || q.indexOf('workshop=') !== -1 || q.indexOf('dash=') !== -1) return;
+      // AD TRAFFIC GOES STRAIGHT INTO LEVEL 1 (owner, Oct 24): an ad click
+      // (ref / utm / click ids) never sees the landing's PLAY NOW tap, which
+      // lost cold visitors before the game. The query is already here, so
+      // attribution needs no handoff.
+      if (/[?&](ref|gclid|gbraid|wbraid|utm_source|utm_campaign)=/.test(q)) return;
       try {
         if (sessionStorage.getItem('trumble.entered')) return;
       } catch (e) { return; } // no storage: fail open to the game
@@ -46,11 +51,11 @@
       location.replace('/landing/' + (qs ? '?' + qs : ''));
     })();
   </script>
-  <script type="module" crossorigin src="/ftue/assets/main-DzI-hPFl.js"></script>
-  <link rel="modulepreload" crossorigin href="/ftue/assets/voyagecompanion-D9N497I-.js">
-  <link rel="modulepreload" crossorigin href="/ftue/assets/persist-B-32rqw9.js">
-  <link rel="modulepreload" crossorigin href="/ftue/assets/gameaudio-CE8WDlMc.js">
-  <link rel="modulepreload" crossorigin href="/ftue/assets/analytics-DhiOX-5-.js">
+  <script type="module" crossorigin src="/ftue/assets/main-Bn0-nIAL.js"></script>
+  <link rel="modulepreload" crossorigin href="/ftue/assets/voyagecompanion-iekRfwKd.js">
+  <link rel="modulepreload" crossorigin href="/ftue/assets/persist-hrxo5LlE.js">
+  <link rel="modulepreload" crossorigin href="/ftue/assets/gameaudio-CB3cmIpv.js">
+  <link rel="modulepreload" crossorigin href="/ftue/assets/analytics-C49zJo06.js">
   <link rel="stylesheet" crossorigin href="/ftue/assets/main-Cms_kVOX.css">
 </head>
 <body>
