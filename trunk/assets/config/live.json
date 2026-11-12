@@ -202,6 +202,11 @@
     "endlessReviveNearBest": 0.7,
     "endlessReviveEvery": 3
   },
+  "modes": {
+    "_doc": "owner ON, Nov 12: the Merge mode (src/merge, falling pairs, pop 3+ of a colour, chains; moves + a target colour). merge true shows its home entry from mergeFromLevel levels cleared; absent or false = no entry (code default OFF).",
+    "merge": true,
+    "mergeFromLevel": 1
+  },
   "collection": {
     "_doc": "playbook #23 (owner ON, Nov 12): the meta audit's price proposal, 1000 -> 600 coins, to close the L24->L35 and L48->L58 unlock gaps. Nothing owned is ever taken back. Playbook #5 (owner Nov 12): Candy Shop tiles UNLOCK BY SHARING (unlock share, CTA from L6; was 1,500 coins at L44): a completed share grants it once per device (docs/playbook/growth/NOTES.md).",
     "items": {
