@@ -1,0 +1,7 @@
+IP Geolocation by DB-IP (https://db-ip.com)
+
+The Trumble API's country lookup (?a=geo) uses the DB-IP "IP to Country Lite"
+database, licensed under the Creative Commons Attribution 4.0 International
+License (https://creativecommons.org/licenses/by/4.0/). The data is packed into
+range tables on the API host and refreshed monthly (scripts/geo/update.php).
+Only the two-letter country is returned; no IP address is stored.
