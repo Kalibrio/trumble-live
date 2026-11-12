@@ -16,50 +16,17 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
   <link rel="manifest" href="manifest.webmanifest" />
   <title>Trumble</title>
-  <script>
-    // THE LANDING PAGE IS THE FRONT DOOR (2026-08-24): a fresh web visit to
-    // the root shows /landing/ first — the title screen — and PLAY NOW
-    // returns here with the session flag set, so one visit sees it once.
-    // Gated on the public hostname, so the native app (capacitor://localhost)
-    // and local dev are never redirected; dev deep links (?play=) and the
-    // landing's own handoff (?from=landing) pass straight through even when
-    // storage is unavailable, so a redirect loop is impossible.
-    (function () {
-      if (location.hostname !== 'trumble.kalibrio.com') return;
-      var q = location.search;
-      // tool deep links pass through too (editor fix 2026-08-30): the
-      // landing bounce dropped ?levels=1 — /level's documented handoff —
-      // and the design tool silently landed on Home instead of opening
-      if (q.indexOf('play=') !== -1 || q.indexOf('from=landing') !== -1
-        || q.indexOf('levels=') !== -1 || q.indexOf('builder=') !== -1
-        || q.indexOf('workshop=') !== -1 || q.indexOf('dash=') !== -1) return;
-      // AD TRAFFIC GOES STRAIGHT INTO LEVEL 1 (owner, Oct 24): an ad click
-      // (ref / utm / click ids) never sees the landing's PLAY NOW tap, which
-      // lost cold visitors before the game. The query is already here, so
-      // attribution needs no handoff.
-      if (/[?&](ref|gclid|gbraid|wbraid|utm_source|utm_campaign)=/.test(q)) return;
-      try {
-        if (sessionStorage.getItem('trumble.entered')) return;
-      } catch (e) { return; } // no storage: fail open to the game
-      // the arrival query (an ad's ref / set / utm / click ids) and the game
-      // base (/, /trunk/, /ftue/) ride the bounce: the landing's PLAY NOW
-      // (public/landing/handoff.js) hands both back
-      var base = location.pathname.replace(/[^/]*$/, '');
-      var sp = new URLSearchParams(q);
-      if (base !== '/') sp.set('to', base);
-      var qs = sp.toString();
-      location.replace('/landing/' + (qs ? '?' + qs : ''));
-    })();
-  </script>
-  <script type="module" crossorigin src="/trunk/assets/main-mGuDzwTM.js"></script>
+  <!-- No landing bounce (owner, Nov 12 2026): the root opens the game directly.
+       /landing/ still exists as a page but nothing redirects to it. -->
+  <script type="module" crossorigin src="/trunk/assets/main-C97MKJgl.js"></script>
   <link rel="modulepreload" crossorigin href="/trunk/assets/rolldown-runtime-DK3Fl9T5.js">
   <link rel="modulepreload" crossorigin href="/trunk/assets/three.module-Dz3mLrz8.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/voyagecompanion-C4hUV_0m.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/persist-DmA9NqlC.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/levels-p43uJ_YZ.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/voyagecompanion-BfJ4vlVN.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/persist-Bi3hAaUN.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/levels-Bfoi3zYH.js">
   <link rel="modulepreload" crossorigin href="/trunk/assets/companioneyes-D17IesjR.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/gameaudio-Bn932pAL.js">
-  <link rel="modulepreload" crossorigin href="/trunk/assets/analytics-CQ8jYmfd.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/gameaudio-DmbhgIBP.js">
+  <link rel="modulepreload" crossorigin href="/trunk/assets/analytics-iXuZM0ng.js">
   <link rel="stylesheet" crossorigin href="/trunk/assets/main-DCaLM8fK.css">
 </head>
 <body>
