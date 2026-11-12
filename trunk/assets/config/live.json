@@ -50,7 +50,34 @@
     "comebackFromLevel": 21,
     "rescueFreeUpTo": 15
   },
-  "economy": {},
+  "economy": {
+    "ads": {
+      "_doc": "playbook #67 (owner ON, Nov 12): Skip level for a rewarded ad. skipLevelRewardsPerDay = THE switch + daily cap (0 = dark); skipLevelMinFails = fails on the level first.",
+      "skipLevelRewardsPerDay": 1,
+      "skipLevelMinFails": 3
+    }
+  },
+  "adRules": {
+    "enabled": true,
+    "_doc": "owner ON, Nov 12: #55 passesPerDay 1 for the first passesFirstDays 3 active days; #69 rewardMult per ad-value tier: low 1x, mid 1.25x (also unknown = a new player), high 1.5x on the coin double (cap rewardMultMax 2, never below 1x).",
+    "passesPerDay": 1,
+    "passesFirstDays": 3,
+    "tiers": {
+      "low": { "rewardMult": 1 },
+      "mid": { "rewardMult": 1.25 },
+      "high": { "rewardMult": 1.5 }
+    },
+    "rewardMultMax": 2,
+    "ecpmDifficulty": {
+      "enabled": true,
+      "maxNudge": 0.1,
+      "fromLevel": 11
+    }
+  },
+  "adFree": {
+    "_doc": "playbook #33 (owner ON, Nov 12): the card and the ads-off entitlement stay inert until the ADFREE_* product ids + verify URL are real (src/liveops/placeholders/adpolicy.ts), a store bridge exists and the server verifier answers.",
+    "enabled": true
+  },
   "event": null,
   "raceWeekly": {
     "name": "Weekend Score Race",
@@ -115,7 +142,33 @@
     }
   },
   "season": null,
-  "experiments": {},
+  "dealer": {
+    "enabled": true,
+    "fromLevel": 20,
+    "mercyAfterFails": 2,
+    "mercyHelpShare": 0.35,
+    "deadCap": 3,
+    "repeatCap": 3,
+    "dangerStack": 0.8,
+    "topOutGuard": true,
+    "ecpmCap": 0.1,
+    "scriptedRuns": 8,
+    "scriptedDrops": 3
+  },
+  "experiments": {
+    "ecpm_difficulty": {
+      "arms": {
+        "off": 50,
+        "on": 50
+      },
+      "primary": "d7",
+      "guard": "d1"
+    },
+    "ad_holdout": { "arms": { "control": 95, "noad": 5 }, "audience": { "newOnly": true }, "primary": "d7", "guard": "d1" },
+    "ad_format": { "arms": { "control": 50, "rewarded": 50 }, "audience": { "newOnly": true }, "primary": "d7", "guard": "d1" },
+    "dealer_mix": { "arms": { "off": 50, "mix": 50 }, "primary": "d7", "guard": "d1" },
+    "goal_size": { "arms": { "base": 34, "lean": 33, "short": 33 }, "primary": "d7" }
+  },
   "controls": {
     "pad": true,
     "tapPlace": true
@@ -123,7 +176,122 @@
   "social": {
     "teams": false
   },
+  "meta": {
+    "hapticTiers": true,
+    "fxDensity": true,
+    "fxDensityWindowMs": 1500,
+    "fxDensityFrom": 6,
+    "fxDensityFloor": 0.62,
+    "boardClearSkin": true,
+    "boardClearFromLevel": 6,
+    "achievements": true,
+    "achievementCoins": 0,
+    "scoreRainbow": true,
+    "textLight": true,
+    "photoTiles": true,
+    "gamesHub": true,
+    "accountLink": true
+  },
+  "session": {
+    "_doc": "owner ON, Nov 12: #15 snap a released drag onto the best goal-paying column 1 away (campaign L21+), #13 Endless entry on home from L20, #71 endless revive only near the best or every 3rd death.",
+    "snapAssist": true,
+    "snapAssistCols": 1,
+    "snapAssistFromLevel": 21,
+    "endlessEntry": true,
+    "endlessEntryFromLevel": 20,
+    "endlessReviveNearBest": 0.7,
+    "endlessReviveEvery": 3
+  },
+  "collection": {
+    "_doc": "playbook #23 (owner ON, Nov 12): the meta audit's price proposal, 1000 -> 600 coins, to close the L24->L35 and L48->L58 unlock gaps. Nothing owned is ever taken back.",
+    "items": {
+      "tiles": { "Sushi Stack": { "price": 600 }, "Brick Wall": { "price": 600 } },
+      "companions": { "bao": { "price": 600 } }
+    }
+  },
+  "yield": {
+    "_doc": "owner ON, Nov 12. Inert until the account values in src/liveops/placeholders/yield.ts are real: max (MAX path, needs MAX_SDK_KEY + MAX units + the Mediation plugin), floors (32), cache (77), banners + collapsible (87/88, need a banner unit), brandAd (89, needs BRAND_AD_*). houseAds.native (85) is live now.",
+    "max": true,
+    "floors": { "enabled": true },
+    "cache": { "enabled": true },
+    "banners": { "enabled": true, "collapsible": { "enabled": true } },
+    "brandAd": { "enabled": true },
+    "houseAds": { "web": true, "native": true }
+  },
+  "slim": {
+    "enabled": true,
+    "persist": true,
+    "prefetch": [],
+    "prefetchDelayS": 45
+  },
   "dev": {
     "unlock": "87cf9287a6f928b0c27721cd021541a8a6e43e564dc815eb90265a7df8959b37"
+  },
+  "stability": { "errors": true, "perf": true, "exits": true, "lowFx": "auto" },
+  "reengage": { "enabled": true, "usual": true, "streak": true, "churn": true, "returnCoins": 50, "softAsk": true, "widget": false, "lapsedIcon": false, "livesFull": true },
+  "liveUpdate": { "enabled": true, "rollback": false, "source": "self" },
+  "growth": {
+    "_doc": "growth track (playbook pass, Nov 2026): liveops/growthconfig.ts. partners ON (owner, Nov 12): each one inert until its OWNER-STEPS keys exist.",
+    "revenue": {
+      "enabled": true,
+      "cents": true,
+      "windowDays": 90,
+      "_doc": "D0..D6 cumulative-USD top-30% cut-offs per country (+ default for any country without a row). US = the reference block-puzzle game's published row. PH / FR / default are PROVISIONAL estimates (US x0.15 / x0.5 / x0.3 by relative eCPM): replace with scripts/growth-report.mjs suggestions once D7 data exists. Country = liveops/country.ts (server geo > storefront > locale).",
+      "thresholds": {
+        "US": [0.01, 0.06, 0.1, 0.14, 0.14, 0.18, 0.18],
+        "PH": [0.0015, 0.009, 0.015, 0.021, 0.021, 0.027, 0.027],
+        "FR": [0.005, 0.03, 0.05, 0.07, 0.07, 0.09, 0.09],
+        "default": [0.003, 0.018, 0.03, 0.042, 0.042, 0.054, 0.054]
+      }
+    },
+    "creatives": {
+      "_doc": "growth #2: creative / campaign id (link ?cr= / ?creative= / ?utm_content= / ?utm_campaign= / ?ref=) -> landing: route (next | level:<n> | daily | shop | events | friends | road) or level <n> or mode <route word>, + onboard (relax | addictive | playnow). Applied after the FTUE only, never skips content. The 7 Kalibrio playables: PROVISIONAL picks (closest feel), docs/playbook/growth/NOTES.md.",
+      "sunstone": { "route": "next", "onboard": "playnow" },
+      "orchardpop": { "route": "next", "onboard": "relax" },
+      "lanternpop": { "route": "next", "onboard": "relax" },
+      "petallink": { "mode": "daily", "onboard": "relax" },
+      "facetrush": { "route": "next", "onboard": "addictive" },
+      "prismdrop": { "route": "next", "onboard": "addictive" },
+      "mergeblast": { "route": "next", "onboard": "addictive" }
+    },
+    "partners": {
+      "_doc": "playbook #1/#86 (owner ON, Nov 12): each partner stays silent (no SDK, no network) until its PLACEHOLDER_ keys in src/liveops/placeholders/growth.ts are real and its native plugin / gtag is present.",
+      "appsflyer": true,
+      "ga4": true,
+      "meta": true,
+      "tiktok": true,
+      "googleads": true
+    },
+    "deeplinks": true,
+    "onboarding": true,
+    "fps": true,
+    "features": true,
+    "boardLog": {
+      "enabled": true,
+      "failSample": 1,
+      "chainMin": 4,
+      "chainSample": 0.25,
+      "maxPerSession": 12
+    },
+    "share": {
+      "enabled": true,
+      "invite": true,
+      "inviteeCoins": 300,
+      "inviterCoins": 300,
+      "inviterCap": 10,
+      "firstShareCoins": 100,
+      "onBest": true,
+      "onChain": 5
+    },
+    "fortune": true
+  },
+  "cloudSave": {
+    "_doc": "playbook #37 kill switch (liveops/killswitch.ts), fail open: enabled false = no save upload and no restore-code claim. docs/RULES.md.",
+    "enabled": true
+  },
+  "analytics": {
+    "_doc": "playbook #37 kill switch (liveops/killswitch.ts), fail open: post false = events wait in the capped local queue and drain when back on; sampleRate 0..1 = share of devices that post at all (per-device, whole funnels).",
+    "post": true,
+    "sampleRate": 1
   }
 }
