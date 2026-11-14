@@ -48,7 +48,10 @@
     "ratingStreak": 3,
     "comebackAfterHours": 12,
     "comebackFromLevel": 21,
-    "rescueFreeUpTo": 15
+    "rescueFreeUpTo": 15,
+    "modeSnakeChance": 0.34,
+    "modeSnakeMaxSkips": 3,
+    "modeSnakeFirstWin": true
   },
   "economy": {
     "ads": {

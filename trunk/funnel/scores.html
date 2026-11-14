@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Endless Scores</title>
+  <style>
+    :root {
+      --bg: #f7f7f5; --panel: #ffffff; --ink: #1d1f23; --muted: #626872; --line: #e1e3e6;
+      --accent: #2f6fe4; --bad: #c73a2e; --chip: #eef2fa;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14161a; --panel: #1c1f24; --ink: #e9ebee; --muted: #9aa1ab; --line: #2d3138;
+        --accent: #7aa7ff; --bad: #ff8a7a; --chip: #252b36;
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 28px 0 10px; }
+    .sub { color: var(--muted); font-size: 13px; margin: 0 0 16px; }
+    .sub a { color: var(--muted); }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    input, button, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+    button { cursor: pointer; }
+    button.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+    .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+    .tile .k { font-size: 12px; color: var(--muted); font-weight: 600; }
+    .tile .v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .tile .c { font-size: 12px; color: var(--muted); }
+    .scroll { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 14px; }
+    th, td { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+    td.n, th.n { text-align: right; }
+    th { font-size: 12px; color: var(--muted); font-weight: 600; }
+    td small { color: var(--muted); }
+    .msg { padding: 14px; border-radius: 8px; background: var(--chip); }
+    .err { color: var(--bad); }
+    #gate { max-width: 420px; }
+    #gate form { display: flex; gap: 8px; margin-top: 10px; }
+    #gate input { flex: 1 1 auto; min-width: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Endless scores</h1>
+    <p class="sub">Every "Send to Ludovic" from an endless run, newest first. <a href="./">Funnel</a> · <span id="meta"></span> <a href="#" id="forget" hidden>Forget key</a></p>
+    <section id="gate" class="panel" hidden>
+      <strong>Viewer key</strong>
+      <div class="sub">The funnel's viewer key. Asked once, kept in this browser only.</div>
+      <form id="keyform"><input id="key" type="password" autocomplete="off" placeholder="paste the viewer key" /><button type="submit">Open</button></form>
+      <p id="gateerr" class="err"></p>
+    </section>
+    <div id="app" hidden>
+      <div class="tiles" id="tiles"></div>
+      <h2>Best per variant</h2>
+      <div class="panel scroll"><table id="best"></table></div>
+      <h2>All submissions <span class="row" style="display:inline-flex;margin-left:8px" id="vfilter"></span></h2>
+      <div class="panel scroll"><table id="subs"></table></div>
+    </div>
+    <p id="status" class="msg" hidden></p>
+  </main>
+  <script type="module">
+    // ENDLESS SCORES VIEWER (Nov 14): ?a=score-submissions on tristris-api,
+    // keyed by the same viewer key as the funnel (localStorage, shared).
+    const API = 'https://tristris-api.kalibrio.com/?a=score-submissions&n=5000&key=';
+    const KEY = 'trumble.funnel.key';
+    const NAMES = { classic: 'Endless Classic', merge: 'Endless Merge', n2048: 'Endless 2048' };
+    const $ = (id) => document.getElementById(id);
+    const store = {
+      get() { try { return localStorage.getItem(KEY) || ''; } catch { return ''; } },
+      set(v) { try { localStorage.setItem(KEY, v); } catch { /* private mode */ } },
+      del() { try { localStorage.removeItem(KEY); } catch { /* ignore */ } },
+    };
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const num = (n) => Number(n).toLocaleString('en-US');
+    const when = (t) => new Date(t * 1000).toISOString().slice(0, 16).replace('T', ' ');
+    let subs = [];
+    let only = '';
+
+    function status(text, isErr = false) {
+      const s = $('status');
+      s.hidden = !text;
+      s.textContent = text || '';
+      s.classList.toggle('err', isErr);
+    }
+    function askKey(err = '') {
+      $('app').hidden = true;
+      $('gate').hidden = false;
+      $('forget').hidden = true;
+      $('gateerr').textContent = err;
+      $('key').focus();
+    }
+    function render() {
+      const vs = Object.keys(NAMES);
+      const day = Date.now() / 1000 - 86400;
+      $('tiles').innerHTML = [
+        ['Submissions', subs.length, `${subs.filter((s) => s.t >= day).length} in the last 24 h`],
+        ...vs.map((v) => {
+          const xs = subs.filter((s) => s.variant === v);
+          return [NAMES[v], xs.length, xs.length ? `top ${num(Math.max(...xs.map((s) => s.score)))}` : 'none yet'];
+        }),
+      ].map(([k, v, c]) => `<div class="tile"><div class="k">${esc(k)}</div><div class="v">${num(v)}</div><div class="c">${esc(c)}</div></div>`).join('');
+      // best per variant: the top 10 submissions (one player may appear twice:
+      // this is the raw log, the in-game board keeps one best per device)
+      $('best').innerHTML = '<tr><th>Variant</th><th>#</th><th>Nickname</th><th class="n">Score</th><th>Build</th><th>When (UTC)</th></tr>'
+        + vs.map((v) => subs.filter((s) => s.variant === v).sort((a, b) => b.score - a.score || a.t - b.t).slice(0, 10)
+          .map((s, i) => `<tr><td>${i ? '' : esc(NAMES[v])}</td><td>${i + 1}</td><td>${s.nickname ? esc(s.nickname) : '<small>(none)</small>'}</td><td class="n">${num(s.score)}</td><td>${esc(s.build)}</td><td>${when(s.t)}</td></tr>`).join('')).join('');
+      $('vfilter').innerHTML = ['', ...vs].map((v) => `<button type="button" data-v="${v}" class="${v === only ? 'on' : ''}">${v ? esc(NAMES[v]) : 'All'}</button>`).join('');
+      const rows = only ? subs.filter((s) => s.variant === only) : subs;
+      $('subs').innerHTML = '<tr><th>When (UTC)</th><th>Variant</th><th>Nickname</th><th class="n">Score</th><th>Build</th></tr>'
+        + rows.map((s) => `<tr><td>${when(s.t)}</td><td>${esc(NAMES[s.variant] ?? s.variant)}</td><td>${s.nickname ? esc(s.nickname) : '<small>(none)</small>'}</td><td class="n">${num(s.score)}</td><td>${esc(s.build)}</td></tr>`).join('');
+    }
+    async function load(key) {
+      status('Loading…');
+      let r;
+      try { r = await fetch(API + encodeURIComponent(key), { cache: 'no-store' }); }
+      catch { status('Network error: the API did not answer.', true); return; }
+      if (r.status === 403) { store.del(); status(''); askKey('That key was refused.'); return; }
+      const body = await r.json().catch(() => null);
+      if (!r.ok || !body || !body.ok || !Array.isArray(body.submissions)) { status(`The API answered ${r.status}.`, true); return; }
+      store.set(key);
+      subs = body.submissions;
+      status(subs.length ? '' : 'No submissions yet.');
+      $('gate').hidden = true;
+      $('app').hidden = false;
+      $('forget').hidden = false;
+      $('meta').textContent = `${num(body.total)} stored, showing ${num(subs.length)}.`;
+      render();
+    }
+    $('vfilter').addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      only = b.dataset.v || '';
+      render();
+    });
+    $('keyform').addEventListener('submit', (e) => { e.preventDefault(); const k = $('key').value.trim(); if (k) void load(k); });
+    $('forget').addEventListener('click', (e) => { e.preventDefault(); store.del(); askKey(); });
+    const k = store.get();
+    if (k) void load(k); else askKey();
+  </script>
+</body>
+</html>
