@@ -1,0 +1,89 @@
+{
+  "referenceURL": "https://www.youtube.com/watch?v=WPpBJ-3NHco",
+  "localScreenshotSource": "output/jewelrush/comparison/reference.png",
+  "copiedUnchanged": true,
+  "screenshotSHA256": "dc5fbb6b264d9e937bc6862a8e8306211a661fc7ef66eb98d0644e9c7798b8cf",
+  "sourceResolution": [
+    1280,
+    720
+  ],
+  "crops": [
+    {
+      "slot": 0,
+      "color": "red",
+      "x": 362,
+      "y": 145,
+      "width": 54,
+      "height": 54
+    },
+    {
+      "slot": 1,
+      "color": "green",
+      "x": 362,
+      "y": 200,
+      "width": 54,
+      "height": 54
+    },
+    {
+      "slot": 2,
+      "color": "blue",
+      "x": 474,
+      "y": 145,
+      "width": 54,
+      "height": 54
+    },
+    {
+      "slot": 3,
+      "color": "yellow",
+      "x": 696,
+      "y": 145,
+      "width": 54,
+      "height": 54
+    },
+    {
+      "slot": 4,
+      "color": "purple",
+      "x": 752,
+      "y": 201,
+      "width": 54,
+      "height": 54
+    }
+  ],
+  "cropCoordinates": "Source pixel x/y, width/height; right and bottom exclusive.",
+  "resolutionLimits": "Reference-resolution gameplay screenshot crops, 54x54 pixels each, include video compression and captured lighting. Not production source assets or recovered original textures.",
+  "processing": "Runtime Canvas drawImage crops preserve interior source pixels unchanged; octagonal alpha clip with 9px corner cut removes captured board corners. sRGB MeshBasicMaterial toneMapped=false; no invented surface detail or ImageGen reinterpretation.",
+  "alphaClipPolygon": [
+    [
+      9,
+      0
+    ],
+    [
+      45,
+      0
+    ],
+    [
+      54,
+      9
+    ],
+    [
+      54,
+      45
+    ],
+    [
+      45,
+      54
+    ],
+    [
+      9,
+      54
+    ],
+    [
+      0,
+      45
+    ],
+    [
+      0,
+      9
+    ]
+  ]
+}

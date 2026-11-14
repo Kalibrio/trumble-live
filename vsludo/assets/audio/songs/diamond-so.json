@@ -1,0 +1,33 @@
+{
+  "song": "diamond-so",
+  "what": "Original procedural arcade instrumental. Exact authored grid, lossless sample-accurate loop.",
+  "source": "scripts/audio/render-diamond-so.mjs",
+  "bpm": 120,
+  "beatsPerBar": 4,
+  "bars": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32
+  ],
+  "accents": "9434943494349434943494349434943494349434943494349434943494349434",
+  "loopSeconds": 32,
+  "sampleRate": 48000,
+  "seed": 7219,
+  "sha256": "2b3aeb72438a8fc25fcd00d15f9491330ff840ac9f1b09a360ed64df5c55f054",
+  "peakDbfs": -3.0980391997148637,
+  "rmsDbfs": -18.52320141376763
+}

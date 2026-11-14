@@ -1,0 +1,386 @@
+[
+  {
+    "path": "assets/gigaverse/pixel/characters/noob/head.png",
+    "sha256": "026af5d05fd044c45245ee52e4e22dabf7b39a2a56aa95a158908f010bf1084a",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/noob/body.png",
+    "sha256": "c893fa42102955fe1ade4965fc650edaa0a3b1ffde9836f9b38e12fef6d2e214",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/archon/head.png",
+    "sha256": "e6b06fcfe4223df43d84f7a6ae0b5d4d6208840d3b783a3633c42da37f637e8a",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/archon/body.png",
+    "sha256": "b9e915c159d5ad213e0a4973dd4d2de57521a1d64676d66d805a4543a387d14b",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/athena/head.png",
+    "sha256": "7c5146a5b6b272b0f9ccbaec276a0747e3bdf8d94e6b25cbcd442c4920226ea6",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/athena/body.png",
+    "sha256": "3a92d25dead9d0d0b6204851ff8f63e12054c8d1f8606e431a68df594810487c",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/chobo/head.png",
+    "sha256": "cd8e85de4d52e69db50d740cc5d5394c6b753d27dcf291dbf1eeede60941a86f",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/chobo/body.png",
+    "sha256": "f18bebd0ccc4c21f92b341e980fccdb80ffc437348f4927cf747dba7eb854045",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/crusader/head.png",
+    "sha256": "4714ccd2b2c92eda98348bb7bcc86f8a45f0c00d6788de4a20ab84ec5f85353b",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/crusader/body.png",
+    "sha256": "ec6ab3aa5114e31c0a8b93a562e6e178d5176f8e5eabf8cfe49bc2ad5fa1f12f",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/foxglove/head.png",
+    "sha256": "090c1ecb4929bd26bf91a9dbfc2f299471ee1637af27bc2f905932c539221832",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/foxglove/body.png",
+    "sha256": "a43e20d463a625c732381f458c0e79aa28aac3a6ece08c5232baeca440e23538",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/overseer/head.png",
+    "sha256": "b14d36d3ce41bb2ae0a11ca774d3ecf39d775af2fbaeab4f15eef75729f6287b",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/overseer/body.png",
+    "sha256": "ad85ce75877fbb585c762298860a56beefdd0990796051a9dcb23a932e51b401",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/summoner/head.png",
+    "sha256": "e90c6ab6a902ccaca4fc681784760e2f6325e989693e19fe404eace57e857dab",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/characters/summoner/body.png",
+    "sha256": "d2db73e35886a4482a5db24aa6717fb851ed54053291d394cbb8150fdc85df37",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/archon/start.png",
+    "sha256": "c8caec9d7b634dfbe8a90cf45f123fdef1db11657aefc14b3bbf3ad190b30c25",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/archon/mid-1.png",
+    "sha256": "76fea16f317337e8c315bb22d508a1337762c53981bbb551b43d5cc3dda1eee9",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/archon/mid-2.png",
+    "sha256": "c885f253489b3dcf4dd26feb902294b4a11168235dcdb072e7c6d1a021f3313d",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/archon/mid-3.png",
+    "sha256": "607368ebc575107b770660b10f06f9cab78b42a880773a3a490e8f9bc48e60d0",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/archon/finish.png",
+    "sha256": "76903f42045febc8c21e2c265b7970e8781487cc94eefe3542ca1ecdcebd6390",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/archon/lightsource.png",
+    "sha256": "7d7f2a5d48fe2ec7ef53eabb293bca97c7823c55b43453bde7a355f34c34bef4",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/athena/start.png",
+    "sha256": "00639fb06db3fe057e413f9512f4121d55e561464a7fd209af5d31746bd3fbb2",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/athena/mid-1.png",
+    "sha256": "a41cc2d312a461ece19157eb60baf0575ea8c329c7c5ccf512cecd4b107a559d",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/athena/mid-2.png",
+    "sha256": "ac87d07f9195070bdb4811f414b46a1d2aa1d0f3b3e72a1a6d8e3278dc36a601",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/athena/mid-3.png",
+    "sha256": "18ecdca59bfa54243f680a8e22b038cbc7191479017fb1b9c53251927d350056",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/athena/finish.png",
+    "sha256": "8acf5470ba1119aede45b7e91fb4d0a5197377c0f3de8dffc0b22384fbd8f060",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/athena/lightsource.png",
+    "sha256": "3e1acafdc518fc9bd2cf629c013f75664aa7117a732b29c6f8a518c336141b55",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/chobo/start.png",
+    "sha256": "2e5d59867620f7534bccb9ae4a472bf49bfd268553832a0c022f15dbca3d15ea",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/chobo/mid-1.png",
+    "sha256": "863fbb437645124681527daa5df69df76e114b6e4cf4399378b1230382dace67",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/chobo/mid-2.png",
+    "sha256": "2a7f83e9fa7b67a34a98f037ee7eb9d1142380f77caf11b9eadb8391e4fedd15",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/chobo/mid-3.png",
+    "sha256": "82b8754f13b2d59194545d6a187d345f21f0cf02568e9230e84142a57a5057e9",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/chobo/finish.png",
+    "sha256": "baa139cf6c99a5ea260d23868415c91b431b4825fa7523d98f097d38c9928245",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/chobo/lightsource.png",
+    "sha256": "5cd2b8f2989e0a568b0cfc7c72d9740dcf91ead7351d42ad181a491b7755a5a8",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/crusader/start.png",
+    "sha256": "a2f7e821bd4248f4105cf69d3b3fa1eddf9e3c1c45f992857ff16ff05ef9cedd",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/crusader/mid-1.png",
+    "sha256": "3ca9b1ebb9bfd1dee77b9c3193a23c2fd5d5f034a5dbcf728a6bbfbf098e15c3",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/crusader/mid-2.png",
+    "sha256": "2dba1aebecac3f541c21142eeea8ce2e6629413d19c525dcec26564759e3a9e7",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/crusader/mid-3.png",
+    "sha256": "12efa559a85dd2eeabcc21c1f9a51199fa41fcfda50f83652c694ea3a1050f2d",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/crusader/finish.png",
+    "sha256": "d47ecb3b62e37c018fd7cd491a4b75ecc9002b3d12a34df86299f0ca5fc51575",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/crusader/lightsource.png",
+    "sha256": "8867c1446b768e0d9455749a01fa94d84824219cac16d7fb2024f4f2388eb69f",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/foxglove/start.png",
+    "sha256": "2a45c10040e7352aee1e631f47e79d0b98571ad6d9036c65bdbd001c4fd86e98",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/foxglove/mid-1.png",
+    "sha256": "9cccceee288612e072d2bcab912a900869619bd1824cc3f99170e23bc2eab023",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/foxglove/mid-2.png",
+    "sha256": "38af9744b13119de82d80c8daf41991543297a302b67adc42973d3679940ac73",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/foxglove/mid-3.png",
+    "sha256": "8aa3a56fb1eeb8f1dd26cc20f0e7d271c19892294fcf8504a326408778e61a93",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/foxglove/finish.png",
+    "sha256": "0ffd642104211bec9365c87f30e7b0712ee06b1d1ad57982cdaf976e1c955933",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/foxglove/lightsource.png",
+    "sha256": "547b77763224cf766ec254b2375fc2aceeac4194ffc1e0985b945aca24ee3342",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/gigus/start.png",
+    "sha256": "5960ac8f1e4614495dfd0c604de2dedc65b79fc6345e5cef54bab8f556e36c12",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/gigus/mid-1.png",
+    "sha256": "33a1af6077772ecf0a796bc24da86a1af031f33742b8b44484bf012ecce2d1ef",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/gigus/mid-2.png",
+    "sha256": "8207da077c0b83fd912cffd69303a5983fcbc322684a00821cad2ffb6161ad01",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/gigus/mid-3.png",
+    "sha256": "2a4fe0a71a4f574cf825960c8111b0b8e47b55c1bc5c5f9da5fd869cb40e5099",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/gigus/finish.png",
+    "sha256": "e3663d3364b521a6149a930e6650e707a3b896f255c9a9711ac59b974fe14888",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/gigus/lightsource.png",
+    "sha256": "8acb02aee66e7fd9fd7dc96ecae4a4bd22e60dc438095455985811c458b9ccbd",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/overseer/start.png",
+    "sha256": "ee7e71d8fd36d0627f47a7696383c8e1e94e20937596f01452a1792e018f85bc",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/overseer/mid-1.png",
+    "sha256": "3f53bb77ae76d611c8499dd09c7ed4dcb10a58f72bdc893ee83e218668fdf8f3",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/overseer/mid-2.png",
+    "sha256": "4e5432c4cf709d5020f94b24274508df1ab8947ab08d7b9088675d23660747ee",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/overseer/mid-3.png",
+    "sha256": "815b247459b77982919027a13bd641ef255a123d5bf595724c214aaf8b424def",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/overseer/finish.png",
+    "sha256": "b6f7fd43f6ee07b55c01271851b2c7840ea9f2d9df8057c01aa75fd25764aa50",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/overseer/lightsource.png",
+    "sha256": "8e6ef4bf75b85c32ad2dad7bde627d86895763b1449fcea43923505b79bd15e8",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/summoner/start.png",
+    "sha256": "07a622540f966d5ea533395cb98c0453bc134e5a71cfa8ce66983aec1eaa7a10",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/summoner/mid-1.png",
+    "sha256": "c1bf053670e7a7ec2bfda256839beee07591cc03b7520f554d2cd5d611a00211",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/summoner/mid-2.png",
+    "sha256": "ada87702fe297e5279f76949b33cb12e10e5628c79a48f6dacac519d97cde27f",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/summoner/mid-3.png",
+    "sha256": "6d67f37cfb84f3d2853c4032da8222cd433669df0702d6dc1f40f04c1862b78e",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/summoner/finish.png",
+    "sha256": "17f997ecac071a0e48cb1afa8fdf81f129f1fdf80dfd89921015ec28f3f9a415",
+    "width": 288,
+    "height": 352
+  },
+  {
+    "path": "assets/gigaverse/pixel/tracks/summoner/lightsource.png",
+    "sha256": "0c3f10964ad252c742f5ff69127be213ef7dc02cef55631fb306794577b573c4",
+    "width": 288,
+    "height": 352
+  }
+]

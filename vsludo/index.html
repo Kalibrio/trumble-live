@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#171145" />
+  <meta name="description" content="A cozy toy-room puzzle: drop, match, and tumble through the toybox with Capy." />
+  <meta property="og:title" content="Trumble" />
+  <meta property="og:description" content="A cozy toy-room puzzle: drop, match, and tumble through the toybox with Capy." />
+  <meta property="og:image" content="https://trumble.kalibrio.com/assets/icons/app_icon.png" />
+  <meta property="og:url" content="https://trumble.kalibrio.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <title>Trumble</title>
+  <!-- No landing bounce (owner, Nov 12 2026): the root opens the game directly.
+       /landing/ still exists as a page but nothing redirects to it. -->
+  <script type="module" crossorigin src="/vsludo/assets/main-DSwYbJa3.js"></script>
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/rolldown-runtime-DK3Fl9T5.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/three.module-Dz3mLrz8.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/voyagecompanion-BDuvLQwx.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/persist-BDf1ikZL.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/levels-r92Wgrus.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/companioneyes-D17IesjR.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/gameaudio-YKkmWuCj.js">
+  <link rel="modulepreload" crossorigin href="/vsludo/assets/analytics-PxXxok0c.js">
+  <link rel="stylesheet" crossorigin href="/vsludo/assets/main-CbL5p3Vx.css">
+</head>
+<body>
+  <!-- FTUE (onboarding, plan 6 / O1): the first paint is the game's own lit
+       hand-off veil, not a blank page, while the bundle boots; main.ts
+       lifts it as soon as the first screen (Level 1's card or the hub) is up -->
+  <div id="boot-veil" aria-hidden="true" style="position:fixed;inset:0;z-index:8999;pointer-events:none;background:radial-gradient(circle 230px at 50% 36%,rgba(255,236,180,.5) 0%,rgba(255,204,120,.26) 40%,rgba(255,170,90,0) 100%),linear-gradient(180deg,#6c6197 0%,#554c7a 48%,#3c355d 100%);transition:opacity 220ms ease-out"></div>
+  <script>setTimeout(function () { var v = document.getElementById('boot-veil'); if (v) v.remove(); }, 12000);</script>
+  <div id="app">
+    <canvas id="game"></canvas>
+    <div id="ui"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "asset": "public/assets/companions/jewelrush/glint-v4.png",
+  "mode": "built-in image_gen original character followed by transparent-alpha cutout refinement",
+  "source": "/Users/kalibrio/.codex/generated_images/01a1589e-b8c5-70c2-9003-68a0efc9ebbc/call_291396ac9b9740dfaab9b1466ced0d50.png",
+  "original_generation": "/Users/kalibrio/.codex/generated_images/01a1589e-b8c5-70c2-9003-68a0efc9ebbc/call_f31a0b91d0ff42ffa4b2e1391c27eaf0.png",
+  "reference": "Original gems-v2.png palette/material only",
+  "generation_prompt_summary": "Original GLINT jewel moth / palace lightkeeper. Sapphire, teal enamel, antique gold, softly sculpted amber face, expressive dark eyes, small smile. Smaller organically joined head, sculpted gold collar, graceful segmented thorax and tapered teal abdomen. Swept layered stained-glass jewelry wings with thickness, curved sapphire facets, teal inner cells, amber inset jewels, gilded edges and branch veins. Fine golden antennae and tucked legs. Premium dimensional hand-painted storybook game art; warm upper-left light; clean transparent silhouette readable at65px. No text, floor or outer shadow. Do not depict puzzle tiles or copy reference assets.",
+  "cutout_prompt": "Remove the entire background from this original jewel moth character. Deliver a clean transparent-alpha cutout of ONLY the moth itself. Preserve the character\u2019s exact wing shape, colors, face, gold outlines, eyes, jewels and antennae, do not redesign anything. Every pixel outside the actual body, wings, antennae and legs must be fully transparent, including the large regions between antennae, between wings and body, and around the outer wing contours. Remove ALL gold/brown/teal atmospheric glow, clouds, gradient backdrop and haze. No replacement background, no vignette, no outer shadow, no halo. This will be composited over an unrelated game background, so genuine alpha transparency around the silhouette is essential. Preserve all character details and original crop proportions.",
+  "runtime": "Authored RGBA on a subdivided Three.js plane with rooted wing deformation; 2.5D, not physically modeled optics."
+}
