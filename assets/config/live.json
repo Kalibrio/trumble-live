@@ -1,5 +1,10 @@
 {
   "version": 3,
+  "adUnits": {
+    "interstitial": "ca-app-pub-4589558338811760/3357067636",
+    "rewarded": "ca-app-pub-4589558338811760/8581474150",
+    "revive": "ca-app-pub-4589558338811760/8417822621"
+  },
   "feel": {},
   "flow": {
     "quickWinFrom": 22,
