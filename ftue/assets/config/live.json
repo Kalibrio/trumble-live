@@ -172,6 +172,7 @@
       "primary": "d7",
       "guard": "d1"
     },
+    "offer_holdout": { "arms": { "control": 90, "holdout": 10 }, "primary": "d7", "guard": "d1" },
     "ad_holdout": { "arms": { "control": 95, "noad": 5 }, "audience": { "newOnly": true }, "primary": "d7", "guard": "d1" },
     "ad_format": { "arms": { "control": 50, "rewarded": 50 }, "audience": { "newOnly": true }, "primary": "d7", "guard": "d1" },
     "dealer_mix": { "arms": { "off": 50, "mix": 50 }, "primary": "d7", "guard": "d1" },
