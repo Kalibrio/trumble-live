@@ -214,6 +214,13 @@
     "endlessReviveNearBest": 0.7,
     "endlessReviveEvery": 3
   },
+  "navLocks": {
+    "_doc": "FUE nav tab locks (owner 2026-11-25, src/meta/navlocks.ts): the Leaderboard tab opens once leaderboardFromLevel levels are cleared, Teams at teamsFromLevel (bad or absent = 10 / 30). firstTileAfterLevel: the win after which the guided first tile set plays (main menu prompt -> Collection -> buy -> play the next level in it); 1..19, 0 = off, bad or absent = 10. A/B: declare experiments.nav_locks (e.g. arms {control: 50, early: 50}, audience newOnly) and give each non-control arm its levels under navLocks.arms.<arm>; control or an unlisted arm uses the base levels. A tab never re-locks once a player has had it open.",
+    "leaderboardFromLevel": 10,
+    "teamsFromLevel": 30,
+    "firstTileAfterLevel": 10,
+    "arms": {}
+  },
   "modes": {
     "_doc": "owner ON, Nov 12: the Merge mode (src/merge, falling pairs, pop 3+ of a colour, chains; moves + a target colour). merge true shows its home entry from mergeFromLevel levels cleared; absent or false = no entry (code default OFF). n2048 true (owner Nov 13) shows the 2048 mode entry (src/m2048: falling number pairs, equal numbers merge, Merge Blast look) from n2048FromLevel levels cleared; same fail-closed default. MODE LOCKS (owner, Nov 14; src/meta/modelocks.ts): every mode opens once its level is CLEARED, shows as a Trophy Road stop at that level, a locked picker row ('Unlocks at level N') before it and a one-time unlock card after it. endlessFromLevel = Endless Classic (absent: session.endlessEntryFromLevel; session.endlessEntry stays its kill switch); endlessMergeFromLevel / endless2048FromLevel need merge / n2048 on and never open before their game. Spacing: 20 = the FTUE's last level (the old endless gate), then one new mode every 4-5 levels between the power-up lessons (Rocket 26, stash 31, Sniper 34, Color Shift 37), all open by the end of area 2, before the Builder at 41. vsLudo (Nov 14, src/vsludo): Classic vs Ludo, a best-of-3 ladder against the bot, opens at vsLudoFromLevel (fail closed: absent or false = no switch in the picker). THE vs LUDO FAMILY (Nov 15): each variant has its own switch (vsMerge, vsN2048, vsEndless, vsEndlessMerge, vsEndless2048: absent = follows vsLudo, false = off) and level (*FromLevel), its own picker lock and Road stop; it also needs vsLudo and its own game (or endless variant) on, and never opens before either.",
     "merge": true,
