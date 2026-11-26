@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-CMeUGvAn.js","assets/persist-uGgd7nSi.js","assets/rolldown-runtime-DK3Fl9T5.js","assets/voyagecompanion-BBIq8vU6.js","assets/three.module-D77Jldhi.js"])))=>i.map(i=>d[i]);
+import{ho as e}from"./voyagecompanion-BBIq8vU6.js";import{zt as t}from"./persist-uGgd7nSi.js";var n=t(`InAppReview`,{web:()=>e(()=>import(`./web-CMeUGvAn.js`).then(e=>new e.InAppReviewWeb),__vite__mapDeps([0,1,2,3,4]))});export{n as InAppReview};
