@@ -3,7 +3,12 @@
   "adUnits": {
     "interstitial": "ca-app-pub-4589558338811760/3357067636",
     "rewarded": "ca-app-pub-4589558338811760/8581474150",
-    "revive": "ca-app-pub-4589558338811760/8417822621"
+    "revive": "ca-app-pub-4589558338811760/8417822621",
+    "android": {
+      "interstitial": "ca-app-pub-4589558338811760/4454526887",
+      "rewarded": "ca-app-pub-4589558338811760/1828363542",
+      "revive": "ca-app-pub-4589558338811760/4538287364"
+    }
   },
   "feel": {},
   "flow": {

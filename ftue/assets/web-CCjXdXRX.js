@@ -1,0 +1,1 @@
+import{St as e}from"./persist-C4TA2U19.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};
