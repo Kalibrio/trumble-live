@@ -1,1 +1,0 @@
-import{Rt as e}from"./persist-DMUdd7So.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};

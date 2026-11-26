@@ -1,1 +1,0 @@
-import{Qt as e}from"./gameaudio-Di74i1vj.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};

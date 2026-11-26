@@ -1,1 +1,0 @@
-import{Nt as e}from"./persist-D3dMid2c.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};

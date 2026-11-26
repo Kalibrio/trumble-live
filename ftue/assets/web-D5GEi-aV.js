@@ -1,1 +1,0 @@
-import{$t as e}from"./gameaudio-h4WAGW8Z.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};
