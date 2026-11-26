@@ -81,6 +81,10 @@
       "high": { "rewardMult": 1.5 }
     },
     "rewardMultMax": 2,
+    "_pacingDoc": "Nov 26, reference-game pacing: no interstitial in a session's first 90 s; 2 app kills during an interstitial within 72 h stop interstitials for 120 min. gapAfterInterstitialS (reference 600 s between interstitials) stays 0 until the owner decides.",
+    "sessionSecondsMin": 90,
+    "escape": { "count": 2, "lookbackH": 72, "coolMin": 120 },
+    "gapAfterInterstitialS": 0,
     "ecpmDifficulty": {
       "enabled": true,
       "maxNudge": 0.1,
@@ -282,6 +286,7 @@
       "enabled": true,
       "cents": true,
       "windowDays": 90,
+      "reactivation": { "enabled": true, "silenceDays": 15, "windowDays": 7, "minUsd": 0.005 },
       "_doc": "D0..D6 cumulative-USD top-30% cut-offs per country (+ default for any country without a row). US = the reference block-puzzle game's published row. PH / FR / default are PROVISIONAL estimates (US x0.15 / x0.5 / x0.3 by relative eCPM): replace with scripts/growth-report.mjs suggestions once D7 data exists. Country = liveops/country.ts (server geo > storefront > locale).",
       "thresholds": {
         "US": [0.01, 0.06, 0.1, 0.14, 0.14, 0.18, 0.18],
