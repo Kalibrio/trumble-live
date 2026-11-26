@@ -1,0 +1,1 @@
+import{Ft as e}from"./persist-Df8P-5_m.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};
