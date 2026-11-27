@@ -187,7 +187,7 @@
     "dealer_mix": { "arms": { "off": 50, "mix": 50 }, "primary": "d7", "guard": "d1" },
     "goal_size": { "arms": { "base": 34, "lean": 33, "short": 33 }, "primary": "d7" }
   },
-  "ftue": {
+  "ftue": { "autoDrop": false,
     "targetDrop": true
   },
   "controls": {
