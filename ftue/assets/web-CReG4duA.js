@@ -1,0 +1,1 @@
+import{Rt as e}from"./persist-6vch0Zip.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};
